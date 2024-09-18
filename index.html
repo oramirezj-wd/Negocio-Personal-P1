@@ -17,17 +17,45 @@
             <img class="header__logo" src="./img/OPTICA SAN GABRIEL.png" alt="Logo óptica San Gabriel">
         </a>
     </header>    
-    <nav>
-        <a href="#">Home </a>
-        <a href="#">Productos</a>
-        <a href="#">Nosotros</a>
-        <a href="#">Contacto</a>
+    <nav class="navegacion">
+        <div class="navegacion__enlace--principales">
+            <a class="navegacion__enlace" href="#">Home </a>
+            <a class="navegacion__enlace" href="#">Productos</a>
+            <a class="navegacion__enlace" href="#">Nosotros</a>
+            <a class="navegacion__enlace" href="#">Contacto</a>
+        </div>
+        <div class="navegacion__enlace">
+            <a class="navegacion__enlace" href="#">Registro/Ingreso</a>
+        </div>
     </nav>
-    <main>
-    
+    <main class="container">
+        <h1>Nuestra Óptica</h1>
+        <div class="grid">
+            <div class="negocio__imagen">
+                <picture>
+                    <source srcset="./img/fachada_optica.webp" type="image/webp">
+                    <img src="./img/fachada_optica.jpg" alt="fachada óptica">
+                </picture>
+                <p class="negocio__imagen--texto">Estamos a sus servicio, lo esperamos para brindarle una atención especializada</p>
+            </div>
+            <div class="negocio__imagen">
+                <picture>
+                    <source srcset="./img/recepcion.webp" type="image/webp">
+                    <img src="./img/recepcion.jpg" alt="recepción óptica">
+                </picture>
+                <p class="negocio__imagen--texto">Contamos con gran variedad de armazones, le ayudamos a identificar el mejor para usted</p>
+            </div>
+            <div class="negocio__imagen">
+                <picture>
+                    <source srcset="./img/consultorio_1.webp" type="image/webp">
+                    <img src="./img/consultorio_1.jpg" alt="consultorio óptica">
+                </picture>
+                <p class="negocio__imagen--texto">Contamos con tecnología de banguardía para la mejor atención posible</p>
+            </div>
+        </div> 
     </main>
-    <footer>
-        
+    <footer class="footer">
+        <p class="footer__texto">Todos los derechos reservados 2024</p>
     </footer>
 </body>
 </html>

@@ -9,11 +9,12 @@
 /* Variables Globales */
 :root {
     --primario: #add7eb;
-    --primarioOscuro: #607EAA;
+    --primarioOscuro: #75b0f3;
     --secundario: #F2F2F2;
     --secundarioOscuro: #D9D9D9;
     --blanco: #fff;
     --negro: #000;
+    --textoOscuro: #0e608f;
 
     --fuentePrincipal: 'Staatliches-Regular', sans-serif; 
 }
@@ -29,7 +30,7 @@ html {
 
 /* Globales */
 body {
-    background-color: var(--primario);
+    background-color: var(--blanco);
     font-size: 1.6rem;
     line-height: 1.5;
 }
@@ -50,7 +51,7 @@ img{
 }
 h1, h2, h3 {
     text-align: center;
-    color: var(--secundario);
+    color: var(--textoOscuro);
     font-family: var(--fuentePrincipal);
 }
 h1 {
@@ -72,6 +73,86 @@ h3 {
     margin: 1rem;
     padding: 3rem;
     width: 35rem;
-    background-color: var(--blanco);
-    border-radius: 16px;
+}
+
+/* Footer */
+.footer {
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+.footer__texto {
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+/***** Navegacion *****/
+.navegacion {
+    background-color: var(--primarioOscuro);
+    padding: 1.5rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+.navegacion__enlace {
+    font-family: var(--fuentePrincipal);
+    color: var(--secundario);
+    font-size: 3rem;
+    margin: 0 3rem;
+    transition: color 0.3 ease;
+}
+.navegacion__enlace:hover {
+    color: var(--secundarioOscuro)
+}
+.navegacion__enlace--principales {
+    display: flex;
+}
+.navegacion__enlace:last-of-type {
+    font-weight: bold;
+}
+@media (max-width: 768px) { 
+    .navegacion {
+        flex-direction: column; 
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    .navegacion__enlace {
+        font-size: 2rem; /* Reduce el tamaño de fuente */
+        margin: 0;
+        width: 100%;        
+        text-align: center; 
+    }
+
+    .navegacion__enlace--principales {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+}
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+/* Imagenes del negocio con descripción */
+.negocio__imagen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.negocio__imagen--texto {
+    color: var(--textoOscuro);
+    font-size: 2.5rem;
+    margin-top: 0.5rem;
+    max-width: 80%;
+    text-align: center;
+}
+@media (max-width: 768px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
 }
