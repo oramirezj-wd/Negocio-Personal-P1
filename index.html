@@ -19,10 +19,10 @@
     </header>    
     <nav class="navegacion">
         <div class="navegacion__enlace--principales">
-            <a class="navegacion__enlace" href="#">Home </a>
+            <a class="navegacion__enlace" href="./index.html">Home </a>
             <a class="navegacion__enlace" href="#">Productos</a>
-            <a class="navegacion__enlace" href="#">Nosotros</a>
-            <a class="navegacion__enlace" href="#">Contacto</a>
+            <a class="navegacion__enlace" href="./pages/nosotros.html">Nosotros</a>
+            <a class="navegacion__enlace" href="./pages/contacto.html">Contacto</a>
         </div>
         <div class="navegacion__enlace">
             <a class="navegacion__enlace" href="#">Registro/Ingreso</a>
@@ -30,32 +30,69 @@
     </nav>
     <main class="container">
         <h1>Nuestra Óptica</h1>
-        <div class="grid">
+        <div class="contenido__principal">
             <div class="negocio__imagen">
-                <picture>
-                    <source srcset="./img/fachada_optica.webp" type="image/webp">
-                    <img src="./img/fachada_optica.jpg" alt="fachada óptica">
-                </picture>
-                <p class="negocio__imagen--texto">Estamos a sus servicio, lo esperamos para brindarle una atención especializada</p>
+                <a href="./pages/nosotros.html">
+                    <picture>
+                        <source srcset="./img/fachada_optica.webp" type="image/webp">
+                        <img src="./img/fachada_optica.jpg" alt="fachada óptica">
+                    </picture>
+                </a>
             </div>
-            <div class="negocio__imagen">
-                <picture>
-                    <source srcset="./img/recepcion.webp" type="image/webp">
-                    <img src="./img/recepcion.jpg" alt="recepción óptica">
-                </picture>
-                <p class="negocio__imagen--texto">Contamos con gran variedad de armazones, le ayudamos a identificar el mejor para usted</p>
+            <div class="formulario__subscripcion">
+                <h2>¡Suscríbete a nuestro boletín!</h2>
+                <p class="formulario__subscripcion--texto">Recibe promociones y consejos para el cuidado de tus ojos.</p>
+                <form>
+                    <input class="formulario__subscripcion--input"  type="email" placeholder="Ingresa tu correo electrónico">
+                    <button class="formulario__subscripcion--boton" type="submit">Suscribirme</button>
+                </form>
             </div>
-            <div class="negocio__imagen">
-                <picture>
-                    <source srcset="./img/consultorio_1.webp" type="image/webp">
-                    <img src="./img/consultorio_1.jpg" alt="consultorio óptica">
-                </picture>
-                <p class="negocio__imagen--texto">Contamos con tecnología de banguardía para la mejor atención posible</p>
+        </div>
+        <section class="productos">
+            <h2>Nuestros Productos</h2> 
+            <div class="grid productos__grid"> 
+                <div class="producto">
+                    <img src="imagen-producto1.jpg" alt="Producto 1">
+                    <h3>Nombre del Producto 1</h3>
+                </div>
+                <div class="producto">
+                    <img src="imagen-producto2.jpg" alt="Producto 2">
+                    <h3>Nombre del Producto 2</h3>
+                </div>
             </div>
-        </div> 
+        </section> 
+
     </main>
     <footer class="footer">
-        <p class="footer__texto">Todos los derechos reservados 2024</p>
+        <div class="footer__contenido">
+            <div class="footer__columna">
+                <h3>Óptica San Gabriel</h3>
+                <p>Dirección: Cavadas #72, Colonia Centro</p>
+                <p>Teléfono: (352) 522-6429</p>
+                <p>Correo electrónico: optsangrabriel@gmail.com</p>
+            </div>
+            <div class="footer__columna">
+                <h3>Enlaces rápidos</h3>
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="#">Productos</a></li>
+                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="./pages/contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+            <div class="footer__columna">
+                <h3>Síguenos en redes sociales</h3>
+                <ul class="footer__redes">
+                    <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li> 
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li> 
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li> 
+                </ul>
+            </div>
+        </div>
+        <div class="footer__derechos">
+            <p>&copy; 2024 Óptica San Gabriel. Todos los derechos reservados.</p>
+            <p>Página con fines educativos</p>
+        </div>
     </footer>
 </body>
 </html>
