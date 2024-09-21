@@ -197,6 +197,7 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-left: 2rem;
 }
 .negocio__imagen--texto {
     color: var(--textoOscuro);
