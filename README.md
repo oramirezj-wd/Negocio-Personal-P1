@@ -43,6 +43,8 @@ Este proyecto fue desarrollado por **Omar Ramírez** como parte del curso **Fund
 
 - **URL del Proyecto**: [Enlace al proyecto](https://oramirezj_wd.github.io/Negocio-Personal-P1/index.html)
 
+- **URL del Proyecto hospedaje de paga**: [Enlace al proyecto hospedaje de paga](https://oramirezj.com)
+
 ## Futuras Mejoras
 
 Aunque el proyecto solo requería una página web, se ha creado la carpeta `pages` con la intención de agregar más contenido en el futuro, como una sección de productos y una página de servicios. El diseño también está preparado para la futura integración de JavaScript para mejorar la interactividad y la experiencia del usuario.
